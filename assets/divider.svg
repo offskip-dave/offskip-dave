@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="18" viewBox="0 0 1200 18" role="presentation">
   <style>
-    :root { --line: #2e4a6240; --shu: #c45c3e; }
-    @media (prefers-color-scheme: dark) { :root { --line: #8cb4d440; --shu: #e8896f; } }
+    .line { stroke: #2e4a62; }
+    .dot { fill: #c45c3e; }
+    @media (prefers-color-scheme: dark) {
+      .line { stroke: #8cb4d4; }
+      .dot { fill: #e8896f; }
+    }
   </style>
-  <line x1="0" y1="9" x2="1200" y2="9" stroke="var(--line)" stroke-width="1"/>
-  <circle cx="600" cy="9" r="3" fill="var(--shu)"/>
+  <line class="line" x1="0" y1="9" x2="1200" y2="9" stroke="#2e4a62" stroke-opacity="0.25" stroke-width="1"/>
+  <circle class="dot" cx="600" cy="9" r="3" fill="#c45c3e"/>
 </svg>

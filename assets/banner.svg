@@ -1,64 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
-  <title id="title">David Ciulla  Tokyo · Laravel Japan community builder</title>
-  <desc id="desc">Frontier-style profile banner for David Ciulla, lead engineer in Tokyo.</desc>
-  <defs>
-    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="var(--sky)"/>
-      <stop offset="55%" stop-color="var(--bg)"/>
-      <stop offset="100%" stop-color="var(--bg)"/>
-    </linearGradient>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="var(--line)" stroke-width="0.6"/>
-    </pattern>
-    <filter id="grain">
-      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
-      <feColorMatrix type="saturate" values="0"/>
-      <feComponentTransfer>
-        <feFuncA type="table" tableValues="0 0.045"/>
-      </feComponentTransfer>
-    </filter>
-    <style>
-      :root {
-        --bg: #faf9f6;
-        --sky: #e8f0f5;
-        --ink: #1c1c1e;
-        --muted: #5c6570;
-        --ai: #2e4a62;
-        --shu: #c45c3e;
-        --line: #2e4a6222;
-        --card: #ffffffcc;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #0f1419;
-          --sky: #1a2430;
-          --ink: #e8ecf1;
-          --muted: #9aa7b4;
-          --ai: #8cb4d4;
-          --shu: #e8896f;
-          --line: #8cb4d428;
-          --card: #1c2430e6;
-        }
-      }
-      .hud { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; letter-spacing: 0.18em; }
-      .display { font-family: ui-sans-serif, Inter, system-ui, sans-serif; }
-      .pulse { transform-origin: 24px 24px; }
-      @media (prefers-reduced-motion: no-preference) {
-        .dash { stroke-dasharray: 6 10; animation: crawl 14s linear infinite; }
-        .pulse { animation: pulse 3.6s ease-in-out infinite; }
-        .orb { animation: drift 9s ease-in-out infinite; }
-      }
-      @keyframes crawl { to { stroke-dashoffset: -160; } }
-      @keyframes pulse { 50% { opacity: 0.35; } }
-      @keyframes drift { 50% { transform: translateY(-6px); } }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img">
+  <title>David Ciulla — Tokyo · Laravel Japan community builder</title>
+  <style>
+    .bg { fill: #faf9f6; }
+    .sky { fill: #e8f0f5; }
+    .grid { stroke: #2e4a62; fill: none; opacity: 0.14; }
+    .ink { fill: #1c1c1e; }
+    .muted { fill: #5c6570; }
+    .ai { fill: #2e4a62; stroke: #2e4a62; }
+    .shu { fill: #c45c3e; stroke: #c45c3e; }
+    .card { fill: #ffffff; stroke: #2e4a62; }
+    .hud { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .16em; }
+    .display { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0f1419; }
+      .sky { fill: #1a2430; }
+      .grid { stroke: #8cb4d4; opacity: 0.18; }
+      .ink { fill: #e8ecf1; }
+      .muted { fill: #9aa7b4; }
+      .ai { fill: #8cb4d4; stroke: #8cb4d4; }
+      .shu { fill: #e8896f; stroke: #e8896f; }
+      .card { fill: #1c2430; stroke: #8cb4d4; }
+    }
+  </style>
 
-  <rect width="1200" height="380" fill="url(#wash)"/>
-  <rect width="1200" height="380" fill="url(#grid)"/>
-  <rect width="1200" height="380" filter="url(#grain)"/>
+  <rect class="bg" width="1200" height="380"/>
+  <rect class="sky" width="1200" height="220"/>
+  <path class="grid" d="M0 28H1200M0 56H1200M0 84H1200M0 112H1200M0 140H1200M0 168H1200M0 196H1200M0 224H1200M0 252H1200M0 280H1200M0 308H1200M0 336H1200M0 364H1200M28 0V380M56 0V380M84 0V380M112 0V380M140 0V380M168 0V380M196 0V380M224 0V380M252 0V380M280 0V380M308 0V380M336 0V380M364 0V380M392 0V380M420 0V380M448 0V380M476 0V380M504 0V380M532 0V380M560 0V380M588 0V380M616 0V380M644 0V380M672 0V380M700 0V380M728 0V380M756 0V380M784 0V380M812 0V380M840 0V380M868 0V380M896 0V380M924 0V380M952 0V380M980 0V380M1008 0V380M1036 0V380M1064 0V380M1092 0V380M1120 0V380M1148 0V380M1176 0V380" stroke="#2e4a62" fill="none" opacity="0.14"/>
 
-  <g fill="var(--ai)" opacity="0.55">
+  <g class="ai" fill="#2e4a62" opacity="0.55">
     <circle cx="980" cy="86" r="1.6"/>
     <circle cx="1048" cy="128" r="1.3"/>
     <circle cx="1112" cy="78" r="1.8"/>
@@ -66,38 +35,36 @@
     <circle cx="1146" cy="156" r="1.5"/>
     <circle cx="1008" cy="214" r="1.1"/>
   </g>
-  <g stroke="var(--ai)" stroke-width="0.6" opacity="0.28" fill="none">
-    <path d="M980 86 L1048 128 L1112 78 L1074 188 L1008 214"/>
+  <path class="ai" d="M980 86L1048 128L1112 78L1074 188L1008 214" fill="none" stroke="#2e4a62" stroke-width="0.6" opacity="0.28"/>
+
+  <g fill="none" stroke="#2e4a62" stroke-width="1.2">
+    <circle class="ai" cx="1048" cy="250" r="54" opacity="0.35"/>
+    <circle class="ai" cx="1048" cy="250" r="78" opacity="0.45" stroke-dasharray="6 10"/>
+    <circle class="shu" cx="1048" cy="250" r="8" fill="#c45c3e" stroke="none"/>
   </g>
 
-  <g class="orb" fill="none" stroke="var(--ai)" stroke-width="1.2">
-    <circle cx="1048" cy="250" r="54" opacity="0.35"/>
-    <circle cx="1048" cy="250" r="78" class="dash" opacity="0.45"/>
-    <circle cx="1048" cy="250" r="8" fill="var(--shu)" stroke="none"/>
+  <rect class="card" x="28" y="22" width="1144" height="36" rx="6" fill="#ffffff" stroke="#2e4a62" stroke-opacity="0.22"/>
+  <circle class="shu" cx="48" cy="40" r="5" fill="#c45c3e"/>
+  <text class="hud ai" x="66" y="45" fill="#2e4a62" font-size="12">? FRONTIER // POD LINK ACTIVE</text>
+  <text class="hud muted" x="1148" y="45" fill="#5c6570" font-size="11" text-anchor="end">?? · 35.68N</text>
+
+  <text class="hud shu" x="40" y="108" fill="#c45c3e" font-size="13">UNIT / OFFSKIP-DAVE</text>
+  <text class="display ink" x="36" y="168" fill="#1c1c1e" font-size="58" font-weight="700">David Ciulla</text>
+  <text class="display ai" x="38" y="208" fill="#2e4a62" font-size="22">Lead engineer · advisor on demand · Laravel Japan community builder</text>
+  <text class="display muted" x="38" y="248" fill="#5c6570" font-size="16">Building products in Tokyo. Mentoring privately. Co-organizing PHP×Tokyo and Laravel Live Japan.</text>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif" font-size="13">
+    <rect x="38" y="286" width="132" height="32" rx="16" fill="none" class="shu" stroke="#c45c3e"/>
+    <text class="shu" x="104" y="307" text-anchor="middle" fill="#c45c3e">Laravel</text>
+    <rect x="180" y="286" width="92" height="32" rx="16" fill="none" class="ai" stroke="#2e4a62"/>
+    <text class="ai" x="226" y="307" text-anchor="middle" fill="#2e4a62">Vue</text>
+    <rect x="282" y="286" width="92" height="32" rx="16" fill="none" class="ai" stroke="#2e4a62"/>
+    <text class="ai" x="328" y="307" text-anchor="middle" fill="#2e4a62">Nuxt</text>
+    <rect x="384" y="286" width="148" height="32" rx="16" fill="none" class="ai" stroke="#2e4a62"/>
+    <text class="ai" x="458" y="307" text-anchor="middle" fill="#2e4a62">Tailwind</text>
+    <rect x="542" y="286" width="92" height="32" rx="16" fill="none" class="ai" stroke="#2e4a62"/>
+    <text class="ai" x="588" y="307" text-anchor="middle" fill="#2e4a62">Rust</text>
   </g>
 
-  <rect x="28" y="22" width="1144" height="36" rx="6" fill="var(--card)" stroke="var(--ai)" stroke-opacity="0.22"/>
-  <circle class="pulse" cx="48" cy="40" r="5" fill="var(--shu)"/>
-  <text class="hud" x="66" y="45" fill="var(--ai)" font-size="12">Æ FRONTIER // POD LINK ACTIVE</text>
-  <text class="hud" x="1148" y="45" fill="var(--muted)" font-size="11" text-anchor="end">q¬ · 35.68N</text>
-
-  <text class="hud" x="40" y="108" fill="var(--shu)" font-size="13">UNIT / OFFSKIP-DAVE</text>
-  <text class="display" x="36" y="168" fill="var(--ink)" font-size="58" font-weight="700">David Ciulla</text>
-  <text class="display" x="38" y="208" fill="var(--ai)" font-size="22">Lead engineer · advisor on demand · Laravel Japan community builder</text>
-  <text class="display" x="38" y="248" fill="var(--muted)" font-size="16">Building products in Tokyo. Mentoring privately. Co-organizing PHP×Tokyo and Laravel Live Japan.</text>
-
-  <g font-family="ui-sans-serif, Inter, system-ui, sans-serif" font-size="13">
-    <rect x="38" y="286" width="132" height="32" rx="16" fill="none" stroke="var(--shu)"/>
-    <text x="104" y="307" text-anchor="middle" fill="var(--shu)">Laravel</text>
-    <rect x="180" y="286" width="92" height="32" rx="16" fill="none" stroke="var(--ai)"/>
-    <text x="226" y="307" text-anchor="middle" fill="var(--ai)">Vue</text>
-    <rect x="282" y="286" width="92" height="32" rx="16" fill="none" stroke="var(--ai)"/>
-    <text x="328" y="307" text-anchor="middle" fill="var(--ai)">Nuxt</text>
-    <rect x="384" y="286" width="148" height="32" rx="16" fill="none" stroke="var(--ai)"/>
-    <text x="458" y="307" text-anchor="middle" fill="var(--ai)">Tailwind</text>
-    <rect x="542" y="286" width="92" height="32" rx="16" fill="none" stroke="var(--ai)"/>
-    <text x="588" y="307" text-anchor="middle" fill="var(--ai)">Rust</text>
-  </g>
-
-  <text class="hud" x="38" y="352" fill="var(--muted)" font-size="11">LOC // TOKYO   ·   SINCE 2015 LARAVEL   ·   FROM TOKYO WITH CURIOSITY</text>
+  <text class="hud muted" x="38" y="352" fill="#5c6570" font-size="11">LOC // TOKYO   ·   SINCE 2015 LARAVEL   ·   FROM TOKYO WITH CURIOSITY</text>
 </svg>

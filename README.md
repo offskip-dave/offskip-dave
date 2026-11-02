@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="David Ciulla — Tokyo · Laravel Japan community builder" width="100%">
+  <img src="assets/banner.svg" alt="David Ciulla — Tokyo · Laravel Japan community builder" width="100%">
 </p>
 
 <p align="center">
@@ -74,11 +74,12 @@ Daily driver: **Cursor** + **Omarchy**. 20+ years on the web.
 
 ## Community
 
-I co-organize Japan’s Laravel conference and Tokyo’s monthly PHP meetup, and I show up around the wider PHP community — PHPカンファレンス, study meetups and more.
+I co-organize Japan’s Laravel conference and Tokyo’s monthly PHP meetup, and I show up around the wider PHP community — PHPカンファレンス, study meetups, and bilingual rooms when it helps.
 
 - Organizer / MC — PHP×Tokyo
 - Co-organizer — Laravel Live Japan (incl. 2026, Tachikawa)
 - Guest — PHPカンファレンス, PHP勉強会＠東京, NativePHP sessions
+- Talk: *Why Japan’s PHP Community Is Booming*
 
 Writing lives on the [site blog](https://davidciulla.laravel.cloud/blog): Omarchy settings, Laravel CMS notes, meetup recaps, tooling.
 
@@ -86,7 +87,7 @@ Writing lives on the [site blog](https://davidciulla.laravel.cloud/blog): Omarch
 
 Private mentorship for web developers — Laravel, PHP, full-stack craft — plus short advisory engagements:
 
-- System design and codebase reviews on-demand
+- System design and codebase reviews
 - Build-vs-buy and technical due diligence
 - Team coaching and AI-assisted development with Cursor
 
@@ -96,7 +97,7 @@ English · German · Japanese (JLPT N3) · French (B1)
 
 ## Connect
 
-Say hello — consulting, mentorship, community work, or coffee in Tokyo (or wherever the Laravel calendar puts us.
+Say hello — consulting, mentorship, community work, or coffee in Tokyo (or wherever the Laravel calendar puts us — most recently Brisbane / Laracon AU).
 
 [Website](https://davidciulla.laravel.cloud/) ·
 [X](https://x.com/offskip_dave) ·
